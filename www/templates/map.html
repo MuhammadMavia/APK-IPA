@@ -1,0 +1,39 @@
+<ion-pane>
+    <div class="bar bar-header bar-dark" style="height:170px !important;">
+        
+        <button style="height:44px" ng-click="goBack()" class="button button-small ion-ios-arrow-left button-clear"></button>
+
+        <ion-content>
+            
+            <div style="height:44px">
+                <center>
+                    <img class="title-image" src="img/logo.png" />
+                </center>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label class="item item-input">
+                        <input type="text" placeholder="Start point" ng-model="start" />
+                    </label>
+                </div>
+
+                <div class="col">
+                    <label class="item item-input">
+                        <input type="text" placeholder="End Point" ng-model="end">
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <input type="submit" value="Get Route" class="button button-small button-energized button-block" style="color:black" ng-click="calcRoute(start,end)" />
+                </div>
+            </div>
+        </ion-content>
+
+    </div>
+    <ion-content class="has-header" style='top:170px;'>
+        <div id="map" data-tap-disabled="true"></div>
+    </ion-content>
+</ion-pane>
