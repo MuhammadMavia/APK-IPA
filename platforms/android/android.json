@@ -1,0 +1,202 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"com.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"connectivity\"><param name=\"android-package\" value=\"com.appfeel.cordova.connectivity.Connectivity\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AdMobAds\"><param name=\"android-package\" value=\"com.appfeel.cordova.admob.AdMobAds\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:name=\"com.google.android.gms.ads.AdActivity\" android:theme=\"@android:style/Theme.Translucent\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.ionic.keyboard": {
+            "PACKAGE_NAME": "com.ud.CanberraTaxiFare"
+        },
+        "cordova-connectivity-monitor": {
+            "PACKAGE_NAME": "com.ud.CanberraTaxiFare"
+        },
+        "cordova-admob": {
+            "PACKAGE_NAME": "com.ud.CanberraTaxiFare"
+        },
+        "cordova-libgoogleadmobads": {
+            "PACKAGE_NAME": "com.ud.CanberraTaxiFare"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ud.CanberraTaxiFare"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ud.CanberraTaxiFare"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ud.CanberraTaxiFare"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ud.CanberraTaxiFare"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.ud.CanberraTaxiFare"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ud.CanberraTaxiFare"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "com.ud.CanberraTaxiFare"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ud.CanberraTaxiFare"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com.ionic.keyboard/www/keyboard.js",
+            "id": "com.ionic.keyboard.keyboard",
+            "clobbers": [
+                "cordova.plugins.Keyboard"
+            ]
+        },
+        {
+            "file": "plugins/cordova-connectivity-monitor/www/connectivity.js",
+            "id": "cordova-connectivity-monitor.connectivity",
+            "clobbers": [
+                "window.connectivity"
+            ]
+        },
+        {
+            "file": "plugins/cordova-admob/www/admob.js",
+            "id": "cordova-admob.AdMobAds",
+            "clobbers": [
+                "window.admob",
+                "window.tappx"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+            "id": "cordova-plugin-splashscreen.SplashScreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+            "id": "cordova-plugin-statusbar.statusbar",
+            "clobbers": [
+                "window.StatusBar"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+            "id": "cordova-plugin-x-socialsharing.SocialSharing",
+            "clobbers": [
+                "window.plugins.socialsharing"
+            ]
+        },
+        {
+            "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+            "id": "ionic-plugin-keyboard.keyboard",
+            "clobbers": [
+                "cordova.plugins.Keyboard"
+            ],
+            "runs": true
+        }
+    ],
+    "plugin_metadata": {
+        "com.ionic.keyboard": "1.0.4",
+        "cordova-connectivity-monitor": "1.2.2",
+        "cordova-admob": "4.1.7",
+        "cordova-libgoogleadmobads": "7.3.1",
+        "cordova-plugin-device": "1.1.0",
+        "cordova-plugin-splashscreen": "3.0.0",
+        "cordova-plugin-statusbar": "2.0.0",
+        "cordova-plugin-whitelist": "1.2.0",
+        "cordova-plugin-x-socialsharing": "5.0.10",
+        "ionic-plugin-keyboard": "1.0.8",
+        "org.apache.cordova.geolocation": "0.3.12",
+        "cordova-plugin-console": "1.0.3"
+    }
+}

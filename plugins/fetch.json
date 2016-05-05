@@ -1,0 +1,134 @@
+{
+    "cordova-plugin-device": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/apache/cordova-plugin-whitelist.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-splashscreen"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-statusbar": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-statusbar"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "ionic-plugin-keyboard": {
+        "source": {
+            "type": "registry",
+            "id": "ionic-plugin-keyboard"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.google.admobsdk": {
+        "source": {
+            "type": "registry",
+            "id": "com.google.admobsdk"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-extension": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-extension"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "com.ionic.keyboard": {
+        "source": {
+            "type": "registry",
+            "id": "com.ionic.keyboard"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "org.apache.cordova.console": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.console"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "org.apache.cordova.device": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "org.apache.cordova.geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.geolocation"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-x-socialsharing": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-x-socialsharing"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-admob": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/appfeel/admob-google-cordova.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-connectivity-monitor": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-connectivity-monitor"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-libgoogleadmobads": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/appfeel/google-iosadmobads",
+            "subdir": ".",
+            "ref": "482f14dd825feee9f7994ca5327dc527b8705910"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-console@~1.0.2"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
